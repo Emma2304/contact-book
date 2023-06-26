@@ -1,5 +1,5 @@
 const PAGE_URL = process.env.NODE_ENV === 'production'
- ? 'placeholder'
+ ? 'https://contact-book-og04.onrender.com'
  : 'http://localhost:3003';
 
  const MONGO_URI = process.env.NODE_ENV === 'production'
