@@ -19,7 +19,6 @@ let numberValidation = false;
 
 const validation = (regexValidation, input) => {
     botonAgg.disabled = nameValidation && numberValidation ? false : true;
-    console.log(botonAgg.disabled);
 
     if (input.value === '') {
         input.classList.remove('wrong');
@@ -60,8 +59,6 @@ form.addEventListener('submit', async e => {
     const { data } = await axios.post('/api/contactos', {
         nombre: newPerson.name, numero: newPerson.number
     });
-
-    console.log(data);
 
     const listItem = document.createElement('li');
     listItem.id = data.id;
